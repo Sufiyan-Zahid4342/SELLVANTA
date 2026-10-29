@@ -1,0 +1,300 @@
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 160px 0 80px;
+  text-align: center;
+  min-height: 680px;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__title {
+  font-family: var(--font-primary);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.t-section__badge {
+  margin:0 auto ;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.page-hero__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+.page-hero__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-problem__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-problem__text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-problem__services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-service h3 {
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.about-service p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.about-values__header,
+.about-team__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-values__header .section-subtitle,
+.about-team__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.value-card h3 {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .about-problem__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.about-problem__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional UI polish */
+  filter: brightness(1) contrast(1) saturate(1); /* Starting filter state */
+  transition: filter 0.3s ease-in-out; 
+}
+
+/* Subtle bounce adjustment for the hover cards */
+.about-service.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.about-service.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.about-service.card {
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.about-service.card:hover {
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
+  box-shadow: 0 20px 60px rgba(var(--accent-rgb), 0.15);
+}
+
+.service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.service-illustration {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.about-service.card:hover .service-illustration {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.about-problem__img {
+  width: 100%;
+  margin-top: 80px;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  filter: grayscale(70%) contrast(1);
+}
+
+.about-problem__img:hover {
+  filter: grayscale(0%) brightness(1.1) contrast(1.2);
+  transform: scale(1.02);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.service-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--accent);
+}
+.service-title {
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* FIRST WORD OUTLINE */
+.outline-word {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--accent-warm);
+  font-weight: 800;
+}
+
+/* REST TEXT */
+.normal-words {
+  color: #fff;
+  font-weight: 700;
+}
+.letterspacing {
+  letter-spacing: 3px;
+  transition: 0.3s ease;
+}
+
+.letterspacing:hover {
+  letter-spacing: 6px;
+  color: var(--accent);
+}
+.value-card {
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align:center;
+}
+
+.value-card:hover {
+  border-color: rgba(var(--accent-rgb), 0.4);
+}
+
+.value-icon {
+  font-size: 22px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.about-values__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+.about-getintouch-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  opacity: 0.2;
+  z-index: -1;
+}
+.about-team__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-team__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.team-story {
+  padding: 40px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  transition: 0.4s ease;
+}
+
+.team-story:hover {
+  border-color: var(--accent);
+  box-shadow: 0 20px 60px rgba(var(--accent-rgb), 0.12);
+}
+
+.team-story h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.team-story p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-team__content {
+    grid-template-columns: 1fr;
+  }
+}

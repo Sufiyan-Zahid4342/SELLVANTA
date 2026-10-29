@@ -1,0 +1,44 @@
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card__number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(0, 217, 255, 0.15);
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  line-height: 1;
+}
+
+.service-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.service-card__desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.service-card__tag {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  background: rgba(var(--accent-rgb), 0.1);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  color: var(--gold-light);
+}

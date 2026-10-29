@@ -1,0 +1,41 @@
+.hero-slider {
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slider__text {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #fff 0%, var(--gold-light) 50%, #fff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+.hero-slider__dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.hero-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: var(--transition);
+}
+
+.hero-slider__dot--active {
+  background: var(--gold);
+  width: 24px;
+  border-radius: 4px;
+}

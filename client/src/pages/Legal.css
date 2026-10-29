@@ -1,0 +1,5 @@
+.page-legal .page-hero { padding: 120px 0 40px; }
+.page-legal .page-hero__title { margin-bottom: 12px; }
+.page-legal .section { padding: 40px 0; }
+.page-legal .section-title { margin-top: 16px; margin-bottom: 8px; }
+.page-legal .section-subtitle { color: var(--text-secondary); }

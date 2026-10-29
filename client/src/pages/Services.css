@@ -1,0 +1,89 @@
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 680px;
+  padding: 160px 0 80px;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.page-hero__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 24px 0 24px;
+  max-width: 780px;
+  text-align: center;
+}
+
+.page-hero__subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.services-badges {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.services-badge {
+  text-align: center;
+}
+
+.services-badge__value {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.services-badge__label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.services-detail__block {
+  padding: 40px 0;
+}
+
+.services-cta {
+  padding-bottom: 120px;
+}
+
+.services-page .page-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-page .page-hero__title {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.services-page .page-hero__subtitle {
+  text-align: center;
+}
